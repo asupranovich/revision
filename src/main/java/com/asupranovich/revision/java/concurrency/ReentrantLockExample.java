@@ -59,7 +59,7 @@ class MessageQueue {
         try {
             lock.lock();
             sleepSafe();
-            while (queue.size() > MAX_CAPACITY) { // prevent
+            while (queue.size() >= MAX_CAPACITY) { // prevent
                 System.out.println("Waiting for space");
                 maxCapacity.await();
             }

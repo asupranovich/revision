@@ -47,7 +47,7 @@ public class UrlShortenerStringKey {
         private final int maxCapacity;
 
         public UrlStorage(int maxCapacity) {
-            super(maxCapacity, 1, true);
+            super((int) (maxCapacity * 1.5), 0.75f, true);
             this.maxCapacity = maxCapacity;
         }
 
