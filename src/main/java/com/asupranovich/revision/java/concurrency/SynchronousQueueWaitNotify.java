@@ -1,6 +1,6 @@
-package com.asupranovich.revision.sandbox;
+package com.asupranovich.revision.java.concurrency;
 
-public class SynchronousQueueWaitNotify <T> {
+public class SynchronousQueueWaitNotify<T> {
 
     private T parcel;
 

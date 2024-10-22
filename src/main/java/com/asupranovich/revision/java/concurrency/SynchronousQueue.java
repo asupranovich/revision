@@ -1,4 +1,4 @@
-package com.asupranovich.revision.sandbox;
+package com.asupranovich.revision.java.concurrency;
 
 import java.util.concurrent.locks.Condition;
 import java.util.concurrent.locks.ReentrantLock;

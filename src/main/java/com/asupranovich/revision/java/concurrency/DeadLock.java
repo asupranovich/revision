@@ -52,7 +52,6 @@ public class DeadLock {
 
         thread1.join();
         thread2.join();
-
     }
 
 }

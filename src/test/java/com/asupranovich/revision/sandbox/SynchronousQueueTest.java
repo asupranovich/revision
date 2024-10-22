@@ -1,6 +1,6 @@
 package com.asupranovich.revision.sandbox;
 
-import java.util.concurrent.TimeUnit;
+import com.asupranovich.revision.java.concurrency.SynchronousQueue;
 import org.junit.jupiter.api.Test;
 
 class SynchronousQueueTest {
