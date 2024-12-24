@@ -49,6 +49,7 @@ public class MapTest {
         assertEquals(-1, one);
 
         Integer two = map.computeIfPresent("Two", (k, v) -> null); // if key exists, deletes key if function returns null
+        assertFalse(map.containsKey("Two"));
         assertNull(two);
 
         Integer three = map.computeIfPresent("Three", (k, v) -> -v); // if key doesn't exist, returns null
@@ -100,8 +101,5 @@ public class MapTest {
 
         boolean wasThreeReplaced = map.replace("Three", 3, -3); // key was not added -> no change
         assertFalse(wasThreeReplaced);
-
-        PriorityQueue<Integer> queue = new PriorityQueue<>(10, Comparator.reverseOrder());
-
     }
 }

@@ -17,7 +17,7 @@ public class SynchronousQueueWaitNotify<T> {
         }
     }
 
-    public synchronized T take() throws InterruptedException {
+    public T take() throws InterruptedException {
         synchronized (consumerLock) {
             while (parcel == null) {
                 consumerLock.wait();

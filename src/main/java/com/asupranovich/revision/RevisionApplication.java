@@ -10,8 +10,8 @@ import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 @EnableAspectJAutoProxy
 public class RevisionApplication {
 
-	public static void main(String[] args) {
-		SpringApplication.run(RevisionApplication.class, args);
-	}
+    public static void main(String[] args) {
+			SpringApplication.run(RevisionApplication.class, args);
+    }
 
 }
