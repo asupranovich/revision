@@ -20,4 +20,5 @@ public class MultimapInversion {
 
         System.out.println(map);
     }
+
 }

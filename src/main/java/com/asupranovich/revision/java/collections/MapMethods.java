@@ -10,7 +10,7 @@ public class MapMethods {
         Map<String, Integer> map = new HashMap<>();
 
         map.put("One", 1);
-        Integer one = map.putIfAbsent("One", 2); //
+        Integer one = map.putIfAbsent("One", 2); // 1
 
         map.getOrDefault("Two", 2); //2
         map.replace("One", -1); // replaces only if key exists in map
